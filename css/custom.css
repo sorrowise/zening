@@ -1,0 +1,232 @@
+body {
+  padding-top: 70px;
+}
+
+#footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    margin-top: 19px;
+}
+
+#footer p {margin: 0;}
+
+#pag {background-color: #34495e}
+
+#post-list li div {padding: 20px;}
+
+@font-face {
+    font-family: "BodoniMTItalic";
+    src: url('http://ogublyqxi.bkt.clouddn.com/fonts/BodoniMT/BodoniMTItalic.eot');
+    src: url('http://ogublyqxi.bkt.clouddn.com/fonts/BodoniMT/BodoniMTItalic.eot') format('embedded-opentype'),
+         url('http://ogublyqxi.bkt.clouddn.com/fonts/BodoniMT/BodoniMTItalic.woff2') format('woff2'),
+         url('http://ogublyqxi.bkt.clouddn.com/fonts/BodoniMT/BodoniMTItalic.woff') format('woff'),
+         url('http://ogublyqxi.bkt.clouddn.com/fonts/BodoniMT/BodoniMTItalic.ttf') format('truetype'),
+         url('http://ogublyqxi.bkt.clouddn.com/fonts/BodoniMT/BodoniMTItalic.svg#BodoniMTItalic') format('svg');
+    unicode-range: U+0-2ff;
+}
+
+}
+
+#abstract {font-family: 'BodoniMTItalic','KaiTi';}
+#post-list {list-style-type:none;}
+#post-list h1 {font-size:2em;font-weight: 400;}
+#post-list h1 a {color: #34495e;}
+#post-list h2 {
+    font-size: 1.8em;
+    color: #008db8;
+    font-weight: 300;
+    margin: 40px 0px 10px 0px;
+    border-left: deepskyblue solid thick;
+    padding: 10px 0px 10px 10px;
+    background-color: #f8f8f8;
+}
+#post-list p {font-size: 100%;line-height:2;}
+
+#read-more {text-align: right;}
+
+#article {font-family: 'BodoniMTItalic','KaiTi';}
+#article h1 {font-size:2em;font-weight: 400;}
+#article h1 a {color: #34495e;}
+#article h2 {
+    font-size: 1.8em;
+    color: #008db8;
+    font-weight: 300;
+    margin: 40px 0px 10px 0px;
+    border-left: deepskyblue solid thick;
+    padding: 10px 0px 10px 10px;
+    background-color: #f8f8f8;
+}
+#article h3 {font-size: 1.429em;color: #008db8}
+#article h4 {font-size: 1.286em}
+#article h5 {font-size: 1.143em}
+#article h6 {font-size: 1em}
+#article p {font-size: 100%;line-height:2;}
+
+.post-info {display: block;border-top: 1px solid;padding: 10px;text-align: left;}
+.post-info .date {margin: 0 10px 0 0;font-size: 14px;padding: 2px 15px;font-family: 'Helvetica','KaiTi';}
+.post-info a {margin: 0 10px 0 0;font-size: 14px;padding: 2px 15px;font-family: 'Helvetica','KaiTi'}
+#category a {color: #fff;font-weight: 400;}
+
+
+
+blockquote {
+    font-style: italic;
+    color: #080;
+    margin: 10px 0px 10px 0px;
+    border-left: green solid thick;
+    padding: 10px 0px 10px 10px;
+    background-color: #f8f8f8;
+}
+
+code {color: deepskyblue;font-weight: bold;background-color: aliceblue;}
+
+.reward {
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 58px;
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    -webkit-user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    margin: 0px auto;
+    padding: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(241, 182, 14);
+    border-radius: 50%;
+    background: linear-gradient(rgb(252, 205, 96) 0px, rgb(251, 174, 18) 100%, rgb(41, 137, 216) 100%, rgb(32, 124, 202) 100%);
+}
+
+.entry-content {border-bottom: 2px dashed white;}
+
+
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: deepskyblue url(http://ogublyqxi.bkt.clouddn.com/img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: deepskyblue;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+.highlight pre
+{
+    background: #272822;
+    color: #f8f8f2;
+    border: 1px solid #272822;
+    /*border-radius: 5px;*/
+}
+.highlight .hll { background-color: #49483e }
+.highlight .c { color: #75715e } /* Comment */
+.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
+.highlight .k { color: #66d9ef } /* Keyword */
+.highlight .l { color: #ae81ff } /* Literal */
+.highlight .n { color: #f8f8f2 } /* Name */
+.highlight .o { color: #f92672 } /* Operator */
+.highlight .p { color: #f8f8f2 } /* Punctuation */
+.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cp { color: #75715e } /* Comment.Preproc */
+.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .cs { color: #75715e } /* Comment.Special */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .kc { color: #66d9ef } /* Keyword.Constant */
+.highlight .kd { color: #66d9ef } /* Keyword.Declaration */
+.highlight .kn { color: #f92672 } /* Keyword.Namespace */
+.highlight .kp { color: #66d9ef } /* Keyword.Pseudo */
+.highlight .kr { color: #66d9ef } /* Keyword.Reserved */
+.highlight .kt { color: #66d9ef } /* Keyword.Type */
+.highlight .ld { color: #e6db74 } /* Literal.Date */
+.highlight .m { color: #ae81ff } /* Literal.Number */
+.highlight .s { color: #e6db74 } /* Literal.String */
+.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .nb { color: #f8f8f2 } /* Name.Builtin */
+.highlight .nc { color: #a6e22e } /* Name.Class */
+.highlight .no { color: #66d9ef } /* Name.Constant */
+.highlight .nd { color: #a6e22e } /* Name.Decorator */
+.highlight .ni { color: #f8f8f2 } /* Name.Entity */
+.highlight .ne { color: #a6e22e } /* Name.Exception */
+.highlight .nf { color: #a6e22e } /* Name.Function */
+.highlight .nl { color: #f8f8f2 } /* Name.Label */
+.highlight .nn { color: #f8f8f2 } /* Name.Namespace */
+.highlight .nx { color: #a6e22e } /* Name.Other */
+.highlight .py { color: #f8f8f2 } /* Name.Property */
+.highlight .nt { color: #f92672 } /* Name.Tag */
+.highlight .nv { color: #f8f8f2 } /* Name.Variable */
+.highlight .ow { color: #f92672 } /* Operator.Word */
+.highlight .w { color: #f8f8f2 } /* Text.Whitespace */
+.highlight .mf { color: #ae81ff } /* Literal.Number.Float */
+.highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
+.highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
+.highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
+.highlight .sb { color: #e6db74 } /* Literal.String.Backtick */
+.highlight .sc { color: #e6db74 } /* Literal.String.Char */
+.highlight .sd { color: #e6db74 } /* Literal.String.Doc */
+.highlight .s2 { color: #e6db74 } /* Literal.String.Double */
+.highlight .se { color: #ae81ff } /* Literal.String.Escape */
+.highlight .sh { color: #e6db74 } /* Literal.String.Heredoc */
+.highlight .si { color: #e6db74 } /* Literal.String.Interpol */
+.highlight .sx { color: #e6db74 } /* Literal.String.Other */
+.highlight .sr { color: #e6db74 } /* Literal.String.Regex */
+.highlight .s1 { color: #e6db74 } /* Literal.String.Single */
+.highlight .ss { color: #e6db74 } /* Literal.String.Symbol */
+.highlight .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #f8f8f2 } /* Name.Variable.Class */
+.highlight .vg { color: #f8f8f2 } /* Name.Variable.Global */
+.highlight .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+.highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
